@@ -1,0 +1,117 @@
+{
+  "name": "smart-comment-translator",
+  "displayName": "Smart Comment Translator – AI-Powered Code Comment Translation",
+  "description": "Translate code comments instantly into 12+ languages (English, Spanish, French, German, Chinese, Japanese, etc.) with one click. Supports MyMemory & LibreTranslate APIs. Perfect for multilingual developers and global teams.",
+  "version": "1.0.1",
+  "publisher": "RonakMunjapara",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Machine Learning",
+    "Extension Packs"
+  ],
+  "keywords": [
+    "translate comments",
+    "code translation",
+    "comment translator",
+    "multilingual code",
+    "developer tools",
+    "i18n for code",
+    "AI translation",
+    "VS Code translate",
+    "auto translate comments",
+    "LibreTranslate",
+    "MyMemory API",
+    "internationalization",
+    "code documentation",
+    "programming productivity"
+  ],
+  "activationEvents": [
+    
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commentTranslator.translateComment",
+        "title": "Smart Comment Translator: Translate Selected Comment",
+        "category": "Comment Translator"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "commentTranslator.translateComment",
+          "when": "editorHasSelection",
+          "group": "1_modification"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Smart Comment Translator",
+      "properties": {
+        "commentTranslator.targetLanguage": {
+          "type": "string",
+          "default": "en",
+          "description": "Target language for comment translation (ISO 639-1 code)",
+          "enum": [
+            "en", "es", "fr", "de", "it", "pt", "ru", "ja", "ko", "zh", "hi", "ar"
+          ],
+          "enumDescriptions": [
+            "English", "Spanish", "French", "German", "Italian", "Portuguese",
+            "Russian", "Japanese", "Korean", "Chinese", "Hindi", "Arabic"
+          ]
+        },
+        "commentTranslator.apiProvider": {
+          "type": "string",
+          "default": "libretranslate",
+          "description": "Translation service provider (free & open-source)",
+          "enum": [
+            "libretranslate",
+            "mymemory"
+          ],
+          "enumDescriptions": [
+            "LibreTranslate (recommended, supports auto-detection)",
+            "MyMemory Translated (fallback option)"
+          ]
+        },
+        "commentTranslator.replaceOriginal": {
+          "type": "boolean",
+          "default": false,
+          "description": "Replace original comment instead of appending translation"
+        }
+      }
+    }
+  },
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#1e40af",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronakmunjapara/smart-comment-translator"
+  },
+  "homepage": "https://github.com/ronakmunjapara/smart-comment-translator#readme",
+  "bugs": {
+    "url": "https://github.com/ronakmunjapara/smart-comment-translator/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/node-fetch": "^2.6.13",
+    "@types/vscode": "^1.74.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
